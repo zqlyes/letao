@@ -1,6 +1,3 @@
-$(function(){
-
-
   // 进度条
   $(document).ajaxStart(function(){
     NProgress.start();
@@ -9,9 +6,11 @@ $(function(){
   $(document).ajaxStop(function(){
     setTimeout(function(){
       NProgress.done();
-    },2000)
+    },500)
   });
 
+
+$(function(){
 
   //点击切换导航
   $('#category').click(function(){

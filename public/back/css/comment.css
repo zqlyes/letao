@@ -69,7 +69,7 @@ ol{
 .aside_nav{
   margin-top: 30px;
 }
-.aside_nav .current,
+.aside_nav ul li.current,
 .aside_nav .children .current{
   background-color: #1D1F21;
   border-left: 3px solid #006699;
@@ -80,7 +80,10 @@ ol{
 .aside_nav li{
   line-height: 40px;
   text-align: center;
-  border-left: 3px solid transparent;
+}
+.aside_nav li:first-child,
+.aside_nav li:last-child{
+  border-left: 3px solid transparent;  
 }
 .aside_nav .children a{
   padding-left: 20px;
@@ -144,4 +147,9 @@ ol{
 .table.table-bordered td{
   text-align: center;
   vertical-align: middle;
+}
+
+.ftCateTable,
+.sdCateTable{
+  margin-top: 20px;
 }
