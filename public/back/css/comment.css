@@ -69,7 +69,8 @@ ol{
 .aside_nav{
   margin-top: 30px;
 }
-.aside_nav .current{
+.aside_nav .current,
+.aside_nav .children .current{
   background-color: #1D1F21;
   border-left: 3px solid #006699;
 }
@@ -83,6 +84,7 @@ ol{
 }
 .aside_nav .children a{
   padding-left: 20px;
+  border-left: 3px solid transparent;
 }
 .aside_nav .children {
   display: none;
@@ -136,4 +138,10 @@ ol{
 .echarts_right{
   width: 48%;
   height: 400px;
+}
+
+.table.table-bordered th,
+.table.table-bordered td{
+  text-align: center;
+  vertical-align: middle;
 }
