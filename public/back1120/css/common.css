@@ -6,6 +6,10 @@
   margin-top: 150px;
 }
 
+.cl_red{
+  color: #A94442;
+}
+
 a,
 a:link,
 a:visited,
@@ -31,6 +35,10 @@ ul{
   height: 1000px;
   padding-left: 180px;
   padding-top: 50px;
+  transition: padding-left 1s;
+}
+.letao.hiddenmenu{
+  padding-left: 0px;
 }
 
 .letao_aside{
@@ -41,6 +49,10 @@ ul{
   top: 0;
   left: 0;
   z-index: 100;
+  transition: left 1s;
+}
+.letao_aside.hiddenmenu{
+  left: -180px;
 }
 
 .aside_title{
@@ -71,11 +83,17 @@ ul{
   margin-top: 30px;
 }
 
+.aside_nav .current{
+  background-color: #1D1F21;
+  border-left: 3px solid #006699;
+}
+
 .aside_nav a{
   display: block;
   line-height: 40px;
   color: #fff;
   padding-left: 40px;
+  border-left: 3px solid transparent;
 }
 .aside_nav .category a{
   padding-left: 60px;
@@ -93,6 +111,10 @@ ul{
   left: 0;
   z-index: 99;
   padding-left: 180px;
+  transition: padding-left 1s;
+}
+.letao_top.hiddenmenu{
+  padding-left: 0px;
 }
 .letao_top a{
   width: 50px;
@@ -111,4 +133,16 @@ ul{
 .content_main .pull-right{
   width: 48%;
   height: 400px;
+}
+
+
+.table.table-bordered th,
+.table.table-bordered td{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.firstTable,
+.secondTable{
+  margin-top: 20px;
 }
