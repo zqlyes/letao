@@ -150,6 +150,11 @@ ol{
 }
 
 .ftCateTable,
-.sdCateTable{
+.sdCateTable,
+.proTable{
   margin-top: 20px;
+}
+
+.imgbox{
+  margin-top: 10px;
 }

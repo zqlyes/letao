@@ -36,6 +36,9 @@ $(function(){
   
   $('.btn-add').click(function(){
     $('#sdCateModal').modal('show');
+    $("#form").data('bootstrapValidator').resetForm(true);
+    $('#dropdownText').text('请选择一级分类');
+    $('#imgbox').attr('src','./images/none.png');
 
     $.ajax({
       type: 'get',
@@ -112,6 +115,23 @@ $(function(){
     $('[name="categoryId"]').val(categoryId);
 
     $('#form').data("bootstrapValidator").updateStatus('categoryId','VALID');
+  })
+
+  $("#form").on('success.form.bv',function(e){
+    e.preventDefault();
+
+    $.ajax({
+      type: 'post',
+      url: '/category/addSecondCategory',
+      data: $('#form').serialize(),
+      dataType: 'json',
+      success: function(info){
+        console.log(info);
+        $('#sdCateModal').modal('hide');
+        currentPage = 1;
+        render();
+      }
+    })
   })
 
 
