@@ -1,0 +1,51 @@
+.cate_left{
+  float: left;
+  width: 90px;
+  height: 100%;
+}
+
+.cate_right{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.cate_left li{
+  width: 90px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #E3E4E5;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.cate_left li a{
+  color: #7C7C7C;
+  display: block;
+}
+.cate_left li.current{
+  background-color: #fff;
+  border-right: none;
+}
+
+
+
+
+.cate_right li{
+  float: left;
+  width: 33.3%;
+}
+.cate_right li a{
+  display: block;
+  text-align: center;
+}
+.cate_right li img{
+  width: 70px;
+  height: 50px;
+  margin:0 auto;
+}
+
+.nomore{
+  padding: 10px;
+}

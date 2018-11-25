@@ -1,0 +1,12 @@
+.front_nav{
+  padding: 10px;
+}
+.front_nav li{
+  float: left;
+  width: 33.3%;
+}
+.front_nav li a{
+  display: block;
+}
+
+
