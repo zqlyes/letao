@@ -144,3 +144,7 @@ ul{
 .front_product li .oldPrice{
   text-decoration: line-through;
 }
+.front_product li img{
+  width: 140px;
+  height: 140px;
+}

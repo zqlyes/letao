@@ -15,3 +15,27 @@
   color: #666666;
   text-align: center;
 }
+
+.search_nav li.current a{
+  color: orange;
+}
+
+.loading{
+  width: 60px;
+  height: 60px;
+  border: 3px solid #069;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+  animation: rotate 1.5s infinite;
+}
+
+@keyframes rotate{
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}

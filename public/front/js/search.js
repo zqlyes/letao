@@ -42,7 +42,7 @@ $(function(){
     getHistory();
     $('input').val('');
 
-    location.href = "search_list.html";
+    location.href = "search_list.html?key=" + txt;
   })
  
 
