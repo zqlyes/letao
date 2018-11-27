@@ -5,15 +5,25 @@ $(function(){
    $('.search_input input').val(txt);
 
   function render(){
-    setInterval(function(){
+    var obj = {};
+    obj.proName = $('.search_input input').val();
+    obj.page = 1;
+    obj.pageSize = 100;
+
+    var $current = $('.search_nav li.current');
+    if($current.length === 1){
+      var sortName = $current.data('type');
+      var sortValue = $current.find('i').hasClass('fa-angle-down') ? 2 : 1;
+
+      obj[sortName] = sortValue;
+    }
+
+
+    setTimeout(function(){
       $.ajax({
         type: 'get',
         url: '/product/queryProduct',
-        data: {
-          proName: $('.search_input input').val(),
-          page: 1,
-          pageSize: 100,
-        },
+        data: obj,
         dataType: 'json',
         success: function(info){
           console.log(info);
